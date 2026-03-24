@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ismita Paheli</title>
+
+<style>
+* {
+    .logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+}
+
+body {
+   background: linear-gradient(to right, #e0e7ff, #fce7f3);
+}
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav h2 {
+    color: #4f46e5;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #475569;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3730a3;
+}
+
+/* SECTION */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* PROJECT GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+   
+* CONTACT */ .contact-info p {
+     margin: 8px 0; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+    <nav>
+    <div class="logo">
+        <img src="/Users/isooya/Desktop/441958583_1080100436996739_6720771025260779108_n.jpg" alt="pfp">
+        <h2>Ismita Paheli</h2>
+    </div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Ismita Paheli</h1>
+    <p>Creative Web Designer | Building Elegant Digital Experiences</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+</section>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+            I am a motivated and creative individual currently pursuing studies in computer applications, 
+            with a strong passion for web development and design. I enjoy transforming ideas into visually 
+            appealing and functional websites that provide a smooth user experience.
+            </p>
+
+            <br>
+
+            <p>
+            I am continuously learning and improving my skills in front-end development, focusing on writing 
+            clean and efficient code. I am particularly interested in modern UI/UX design and strive to build 
+            elegant, responsive, and user-friendly digital interfaces.
+            </p>
+
+            <br>
+
+            <p>
+            My goal is to grow as a professional web developer and contribute to meaningful digital projects 
+            while expanding my technical and creative abilities.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="card">
+            <ul>
+                <li>HTML & CSS (Responsive Design)</li>
+                <li>Java Programming</li>
+                <li>GitHub & Version Control</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+
+            <div class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>Resume Website</h3>
+                <p>A clean and modern personal portfolio website.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🎨</div>
+                <h3>Web Design Practice</h3>
+                <p>Collection of responsive and aesthetic UI designs.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">⚙️</div>
+                <h3>Mini Projects</h3>
+                <p>Basic projects to strengthen development skills.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+
+        <form>
+            <input type="text" placeholder="Your Name" required><br><br>
+
+            <input type="email" placeholder="Your Email" required><br><br>
+
+            <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <br>
+
+        <p>Email: sooya7395@gmail.com</p>
+        <p>Phone: 9849694742</p>
+
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Ismita Paheli</p>
+</footer>
+
+</body>
+</html>
